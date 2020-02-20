@@ -83,24 +83,16 @@ markAttendance(username, status = "present") {
     }
 }
 
-/////////////////////////////////////////
-// TODO: Prompt User for Course Info  //////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//
-// Prompt the user for information to create the Course. In order to create a
-// `Course` object, you must gather the following information:
-//
-// TODO: Prompt the user for the `courseCode` (the number/code of the course, like "WATS 3000").
+
 let courseCode = prompt("Enter the course code: ", "WATS 3020");
 
-// TODO: Prompt the user for the `courseTitle` (the name of the course, like "Introduction to JavaScript").
+
 let courseTitle = prompt("Enter the course title: ", "Intro to JavaScript");
 
-// TODO: Prompt the user for the  `courseDescription` (the descriptive summary of the course).
+
 let courseDescription = prompt("Enter the course description:", "Learning to code JS");
 
-// Create a new `Course` object instance called `myCourse` using the three data points just collected from the user.
-// TODO: Add in the values for the information supplied by the user above.
+
 let myCourse = new Course(courseCode, courseTitle, courseDescription);
 
 ///////////////////////////////////////////////////
@@ -198,7 +190,7 @@ function updateRoster(course){
 }
 
 function setupAttendanceButtons(){
-    // Set up the event listeners for buttons to mark attendance.
+
     let presentButtons = document.querySelectorAll('.present');
     for (button of presentButtons){
         button.addEventListener('click', function(e){
